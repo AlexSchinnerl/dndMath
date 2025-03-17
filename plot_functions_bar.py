@@ -34,7 +34,7 @@ def draw_stacked_bar_plot(plot_dict, labels, title):
         p = ax.bar(x=labels, height=dmgValue, width=width, label=dmgType, bottom=bottom)
         ax.bar_label(p, label_type="center", fontsize=TICKSIZE-1)
         bottom += dmgValue
-    ax.bar_label(p, padding=3, fontsize=TICKSIZE)
+    ax.bar_label(p, padding=7, fontsize=TICKSIZE)
     ax.set_title(f"{title}", fontsize=TITLESIZE)
     ax.legend(loc="upper left", fontsize=TICKSIZE)
 
