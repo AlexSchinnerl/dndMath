@@ -3,6 +3,7 @@ import numpy as np
 
 TICKSIZE = 15
 TITLESIZE = 25
+DPI = 600
 
 def calculate_dmg_parts(value_array):
     exp_base_damage = value_array[1]*value_array[3] # BaseDamage * chance2Hit
